@@ -585,8 +585,6 @@ site:jfrog.io "example[.]com"
 site:firebaseio.com "example[.]com"
 ```
 
-## Dorks that work better w/o domain
-
 ### Bug Bounty programs and Vulnerability Disclosure Programs <!--omit-->
 
 ```
