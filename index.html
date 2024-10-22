@@ -1,452 +1,557 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exclusive - Premier Online Shopping</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons CDN -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <marquee style="color: rgb(250, 250, 252);">New tools Upcoming - 💫 Follow Social Media and Youtube Channel🔥</marquee>
+    <hr style="color: white;">
+    <title>Bug Bounty Search Engine</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    rel="stylesheet"/>
     <style>
-        .banner {
-            background-color: #000000;
-            color: white;
+        body {
+            background-image: url(https://assets.faisalahmed.me/bg1.png);
+            margin: 0;
+            padding: 0;
+            background-color: #c8bfbf;
         }
-        .feature-icon {
-            font-size: 2rem;
-            color: #070707;
+        
+        .background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
         }
-        .founder-img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 50%;
-        }
-        .stat-box {
-            width: 250px;
-            height: 250px;
-            padding: 20px;
+        
+        .button-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             display: flex;
-            text-align: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .button-column {
+            display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            border-radius: 15px;
-            box-shadow: 0 12px 6px rgba(0, 0, 0, 0.1);
-            background-color: white;
-            margin: 20px;
-        }
-
-        .stat-icon {
-            font-size: 40px;
-            margin-bottom: 10px;
-        }
-
-        .stat-value {
-            font-size: 30px;
-            font-weight: bold;
-        }
-
-        .stat-text {
-            font-size: 18px;
-        }
-        .team-member {
-            text-align: center;
-            padding: 20px;
-        }
-        .team-member img {
-            width: 250px;
-            height: 250px;
-            border-radius: 15px;
-            margin-bottom: 10px;
-        }
-        .social-links a {
-            margin: 0 8px;
-            font-size: 1.1rem;
+            align-items: flex-start;
+            margin-right: 10px;
         }
         
-        .social-links a:hover {
-            opacity: 0.7;
-        }
-        .features-section .feature-icon-wrapper {
-            display: inline-block;
-            padding: 10px;
+        .futuristic-button {
+            padding: 06px 08px;
+            font-size: 14px;
+            background-color: transparent;
+            border: 1px solid #ffffff;
+            color: #ffffff;
+            transition: all 0.3s ease;
         }
         
-        .feature-icon-circle {
+        .futuristic-button:hover {
+            background-color: #ffffff;
+            color: #0088ff;
+            border-color: #4c94be;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        .search-container {
             display: flex;
-            align-items: center;
             justify-content: center;
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            background-color: #f0f0f0;
-            margin-bottom: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
         }
         
-        .feature-icon {
-            font-size: 2rem;
-            color: black;
-        }
-        
-        h4 {
-            font-weight: bold;
-        }
-        
-        p {
-            font-size: 14px;
-            color: #555;
-        }
-        .footer {
-            background-color: #000; /* Dark background */
-        }
-        
-        .footer h5 {
-            font-weight: bold;
-        }
-        
-        .footer p, .footer a {
-            font-size: 14px;
-            color: #b5b5b5; /* Light gray text */
-        }
-        
-        .footer .input-group {
-            max-width: 250px;
-        }
-        
-        .footer .btn {
-            border: none;
-        }
-        
-        .footer .social-icons i {
-            font-size: 1.5rem;
-        }
-        
-        .footer .app-buttons img {
-            max-width: 120px;
-        }
-        
-        .footer .social-icons a {
-            color: #b5b5b5;
-            transition: color 0.3s ease;
-        }
-        
-        .footer .social-icons a:hover {
-            color: white;
-        }
-        
-        .footer .list-unstyled a:hover {
-            color: white;
-        }
-        .our-story {
-            background-color: #fff; /* Background color for the section */
-        }
-        
-        .our-story h2 {
-            font-family: 'Arial', sans-serif; /* Optional: customize font */
-            color: #333; /* Dark text color */
-        }
-        
-        .our-story p {
+        .search-label {
             font-size: 18px;
-            line-height: 1.7;
-            color: #555;
+            color: #fff714;
+            margin-right: 10px;
         }
         
-        .our-story img {
-            border-radius: 10px; /* Rounded corners for the image */
+        .search-input {
+            padding: 8px;
+            font-size: 16px;
+            border: 2px solid #ffffff;
+            border-radius: 4px;
+            background-color: transparent;
+            color: #ffffff;
+        }
+
+        .background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .center-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
         
-        @media (max-width: 768px) {
-            .our-story .row {
-                flex-direction: column-reverse; /* Stack text and image vertically on smaller screens */
-            }
+        .center-container img {
+            display: block;
+            margin: 0 auto;
         }
-        
-        
-        
     </style>
-</head>
-<body>
-    <!-- Banner -->
-    <div class="banner py-2 text-center">
-        <p class="m-0">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! <a href="#" class="text-white">ShopNow</a></p>
+    <script>
+         function googleSearch(type) {
+        var targetDomain = document.getElementById('target').value;
+
+        if (!targetDomain) {
+            alert('Please enter your target domain.');
+            return;
+        }
+
+        var searchQuery = 'site:' + targetDomain;
+
+        switch (type) {
+            case 1:
+                searchQuery += ' intitle:index.of';
+                break;
+            case 2:
+                searchQuery += ' ext:xml | ext:conf | ext:cnf | ext:reg | ext:inf | ext:rdp | ext:cfg | ext:txt | ext:ora | ext:ini | ext:env';
+                break;
+            case 3:
+                searchQuery += ' ext:sql | ext:dbf | ext:mdb';
+                break;
+            case 4:
+                searchQuery += ' ext:log';
+                break;
+            case 5:
+                searchQuery += ' ext:bkf | ext:bkp | ext:bak | ext:old | ext:backup';
+                break;
+            case 6:
+                searchQuery += ' inurl:login | inurl:signin | intitle:login | intitle:signin | inurl:signup | inurl:register | intitle:Signup | inurl:secure';
+                break;
+            case 7:
+                searchQuery += ' intext:"sql syntax near" | intext:"syntax error has occurred" | intext:"incorrect syntax near" | intext:"unexpected end of SQL command" | intext:"Warning: mysql_connect()" | intext:"Warning: mysql_query()" | intext:"Warning: pg_connect()"';
+                break;
+            case 65 :
+                searchQuery += ' intitle:index.of | ext:log | ext:php intitle:phpinfo "published by the PHP Group" | inurl:shell | inurl:backdoor | inurl:wso | inurl:cmd | shadow | passwd | boot.ini | inurl:backdoor | inurl:readme | inurl:license | inurl:install | inurl:setup | inurl:config | inurl:"/phpinfo.php" | inurl:".htaccess" | ext:swf';
+                break;
+            case 66 :
+                searchQuery += ' "PHP Parse error" | "PHP Warning" | "PHP Error"';
+                break;
+            case 8 :
+                searchQuery += ' ext:doc | ext:docx | ext:odt | ext:pdf | ext:rtf | ext:sxw | ext:psw | ext:ppt | ext:pptx | ext:pps | ext:csv ext:txt | ext:xml | ext:xls | ext:xlsx intext:“confidential” | intext:“Not for Public Release” | intext:”internal use only” | intext:“do not distribute”';
+                break;
+            case 9:
+                searchQuery += ' ext:php inurl:? intitle:phpinfo "published by the PHP Group"';
+                break;
+            case 10:
+                searchQuery += ' inurl:wp- | inurl:wp-content | inurl:plugins | inurl:uploads | inurl:themes | inurl:download | inurl:wp-includes';
+                break;
+            case 11:
+                searchQuery += ' inurl:shell | inurl:backdoor | inurl:wso | inurl:cmd | shadow | passwd | boot.ini | inurl:backdoor';
+                break;
+            case 12:
+                searchQuery += ' inurl:readme | inurl:license | inurl:install | inurl:setup | inurl:config';
+                break;
+            case 13:
+                searchQuery += ' inurl:redir | inurl:url | inurl:redirect | inurl:return | inurl:src=http | inurl:r=http';
+                break;
+            case 14:
+                searchQuery += ' ext:action | ext:struts | ext:do';
+                break;
+            case 15:
+                var site = 'site:pastebin.com ' + targetDomain;
+                var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
+                window.open(url, '_blank');
+                return;
+            case 16:
+                var site = 'site:linkedin.com employees ' + targetDomain;
+                var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
+                window.open(url, '_blank');
+                return;
+            case 17:
+                var site = 'inurl:"/phpinfo.php" | inurl:".htaccess" | inurl:"/.git" ' + targetDomain + ' -github';
+                var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
+                window.open(url, '_blank');
+                return;
+            case 18:
+                var site = 'site:*.' + targetDomain;
+                var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
+                window.open(url, '_blank');
+                return;
+            case 19:
+                var site = 'site:*.*.' + targetDomain;
+                var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
+                window.open(url, '_blank');
+                return;
+            case 20:
+                var site = 'inurl:wp-content | inurl:wp-includes ' + targetDomain;
+                var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
+                window.open(url, '_blank');
+                return;
+            case 21:
+                var site = '"*.' + targetDomain + '"';
+                var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+                window.open(url, '_blank');
+                return;
+            case 22:
+                var url = 'http://' + targetDomain + '/crossdomain.xml';
+                window.open(url, '_blank');
+                return;
+            case 23:
+                var url = 'http://threatcrowd.org/domain.php?domain=' + targetDomain;
+                window.open(url, '_blank');
+                return;
+            case 24:
+                var site = '+inurl:' + targetDomain + ' +ext:swf';
+                var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
+                window.open(url, '_blank');
+                return;
+            case 25:
+                var site = 'site:' + targetDomain + ' mime:swf';
+                var url = 'https://yandex.com/search/?text=' + encodeURIComponent(site);
+                window.open(url, '_blank');
+                return;
+            case 26:
+                var site = targetDomain;
+                var url = 'https://web.archive.org/cdx/search?url=' + encodeURIComponent(site) + '/&matchType=domain&collapse=urlkey&output=text&fl=original&filter=urlkey:.*swf&limit=100000&_=1507209148310';
+                window.open(url, '_blank');
+                return;
+            case 27:
+                var site = targetDomain;
+                var url = 'https://web.archive.org/cdx/search?url=' + encodeURIComponent(site) + '/&matchType=domain&collapse=urlkey&output=text&fl=original&filter=mimetype:application/x-shockwave-flash&limit=100000&_=1507209148310';
+                window.open(url, '_blank');
+                return;
+            case 28:
+                var site = '.' + targetDomain;
+                var url = 'https://web.archive.org/web/*/(.' + encodeURIComponent(site) + ')';
+                window.open(url, '_blank');
+                return;
+            case 29:
+                var site = targetDomain;
+                var url = 'https://web.archive.org/web/*/' + encodeURIComponent(site) + '/*';
+                window.open(url, '_blank');
+                return;
+            case 30:
+                var url = 'https://crt.sh/?q=%25.' + targetDomain;
+                window.open(url, '_blank');
+                return;
+            case 31:
+                var site = targetDomain;
+                var url = 'https://www.openbugbounty.org/search/?search=' + encodeURIComponent(site) + '&type=host';
+                window.open(url, '_blank');
+                return;
+            case 32:
+                var site = targetDomain;
+                var url = 'https://www.reddit.com/search/?q=' + encodeURIComponent(site) + '&source=recent';
+                window.open(url, '_blank');
+                return;
+            case 33:
+                var site = '+inurl:' + targetDomain + ' +ext:wp- | +inurl:' + targetDomain + ' +ext:wp-content';
+                var url = 'http://wwwb-dedup.us.archive.org:8083/cdx/search?url=' + encodeURIComponent(site) + '/&matchType=domain&collapse=digest&output=text&fl=original,timestamp&filter=urlkey:.*wp[-].*&limit=1000000&xx=';
+                window.open(url, '_blank');
+                return;
+            case 34:
+                var url = 'https://censys.io/ipv4?q=' + targetDomain;
+                window.open(url, '_blank');
+                return;
+            case 35:
+                var url = 'https://censys.io/domain?q=' + targetDomain;
+                window.open(url, '_blank');
+                return;
+            case 36:
+                var url = 'https://censys.io/certificates?q=' + targetDomain;
+                window.open(url, '_blank');
+                return;
+            case 37:
+                var url = 'https://www.shodan.io/search?query=' + targetDomain;
+                window.open(url, '_blank');
+                return;
+            case 38:
+                searchQuery += ' inurl:"/geoserver/ows?service=wfs"';
+                break;
+            case 39:
+                searchQuery += ' intext:"ArcGIS REST Services Directory" intitle:"Folder: /"';
+                break;
+            case 40:
+                searchQuery += ' inurl:/wp-content/uploads/wpo_wcpdf';
+                break;
+            case 41:
+                searchQuery += ' intitle:"index of "main.yml"';
+                break;
+            case 42:
+                searchQuery += ' inurl:/admin.aspx'
+                break
+            case 43:
+                searchQuery += ' inurl:/wp-content/uploads/wpo_wcpdf'
+                break
+            case 44:
+                searchQuery += ' inurl:uploadimage.php'
+                break
+            case 45:
+                searchQuery += ' inurl:*/wp-content/plugins/contact-form-7/'
+                break
+            case 46:
+                searchQuery += ' intitle:index.of conf.php'
+                break
+            case 47:
+                searchQuery += ' intitle:"Sharing API Info"'
+                break
+            case 48:
+                searchQuery += ' intitle:"Index of" inurl:/backup/ "admin.zip"'
+                break
+            case 49:
+                searchQuery += ' intitle:"index of" github-api'
+                break
+            case 50:
+                searchQuery += ' inurl:wp-content/uploads/wcpa_uploads'
+                break
+            case 51:
+                searchQuery += ' inurl:user intitle:"Drupal" intext:"Log in" -"powered by"'
+                break
+            case 52:
+                searchQuery += ' inurl: /libraries/joomla/database/'
+                break
+            case 53:
+                searchQuery += ' inurl:"php?sql=select" ext:php'
+                break
+            case 54:
+                searchQuery += ' inurl:"wp-content" intitle:"index.of" intext:wp-config.php'
+                break
+            case 55 :
+                searchQuery += ' intext:"index of" inurl:json-rpc'
+                break
+            case 56 :
+                searchQuery += ' intitle:"index of" "download.php?file="'
+                break
+            case 57 :
+                searchQuery += ' intext:"index of" inurl:jwks-rsa'
+                break
+            case 58 :
+                searchQuery += ' inurl:"wp-content" intitle:"index.of" intext:backup"'
+                break
+            case 59 :
+                searchQuery += ' intitle:index.of conf.mysql'
+                break
+            case 60 :
+                searchQuery += ' intitle:"index of" "users.yml" | "admin.yml" | "config.yml"'
+                break
+            case 61 :
+                searchQuery += ' intitle:"index of" "docker-compose.yml"'
+                break
+            case 62 :
+                searchQuery += ' intext:pom.xml intitle:"index of /"'
+                break
+            case 63 :
+                searchQuery += ' intext:"Index of" intext:"/etc"'
+                break
+            case 64 :
+                searchQuery += ' "sql" "parent" intitle:index.of -injection'
+                break
+            case 71 :
+                searchQuery += ' ext:log | ext:txt | ext:conf | ext:cnf | ext:ini | ext:env | ext:sh | ext:bak | ext:backup | ext:swp | ext:old | ext:~ | ext:git | ext:svn | ext:htpasswd | ext:htaccess | ext:json'
+                break
+            case 72 :
+                var site = 'inurl:conf | inurl:env | inurl:cgi | inurl:bin | inurl:etc | inurl:root | inurl:sql | inurl:backup | inurl:admin | inurl:php ' + searchQuery;
+                var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
+                window.open(url, '_blank');
+                break
+            case 73 :
+                var site = 'inurl:"error" | intitle:"exception" | intitle:"failure" | intitle:"server at" | inurl:exception | "database error" | "SQL syntax" | "undefined index" | "unhandled exception" | "stack trace" ' + searchQuery;
+                var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
+                window.open(url, '_blank');
+                break
+            case 74 : 
+                var site = 'inurl:q= | inurl:s= | inurl:search= | inurl:query= | inurl:keyword= | inurl:lang= inurl:& ' + searchQuery;
+                var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
+                window.open(url, '_blank');
+                break
+            case 75 : 
+                var site = 'inurl:url= | inurl:return= | inurl:next= | inurl:redirect= | inurl:redir= | inurl:ret= | inurl:r2= | inurl:page= inurl:& inurl:http ' + searchQuery;
+                var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
+                window.open(url, '_blank');
+                break
+            case 76 : 
+                var site = 'inurl:id= | inurl:pid= | inurl:category= | inurl:cat= | inurl:action= | inurl:sid= | inurl:dir= inurl:& ' + searchQuery;
+                var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
+                window.open(url, '_blank');
+                break
+            case 77 : 
+                var site = 'inurl:http | inurl:url= | inurl:path= | inurl:dest= | inurl:html= | inurl:data= | inurl:domain=  | inurl:page= inurl:& ' + searchQuery;
+                var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
+                window.open(url, '_blank');
+                break
+            case 78 : 
+                var site = 'inurl:include | inurl:dir | inurl:detail= | inurl:file= | inurl:folder= | inurl:inc= | inurl:locate= | inurl:doc= | inurl:conf= inurl:& ' + searchQuery;
+                var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
+                window.open(url, '_blank');
+                break
+            case 79 : 
+                var site = 'inurl:cmd | inurl:exec= | inurl:query= | inurl:code= | inurl:do= | inurl:run= | inurl:read=  | inurl:ping= inurl:& ' + searchQuery;
+                var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
+                window.open(url, '_blank');
+                break
+            case 80 : 
+                searchQuery += ' ”choose file”'
+                break
+            case 81 : 
+                var site = 'inurl:apidocs | inurl:api-docs | inurl:swagger | inurl:api-explorer ' + searchQuery;
+                var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
+                window.open(url, '_blank');
+                break
+            case 82 : 
+                var site = 'inurl:test | inurl:env | inurl:dev | inurl:staging | inurl:sandbox | inurl:debug | inurl:temp | inurl:internal | inurl:demo ' + searchQuery;
+                var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
+                window.open(url, '_blank');
+                break
+            case 83 : 
+                var site = 'inurl:email= | inurl:phone= | inurl:password= | inurl:secret= inurl:& ' + searchQuery;
+                var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
+                window.open(url, '_blank');
+                break
+            case 84 : 
+                searchQuery += ' -www -shop -share -ir -mfa'
+                break
+            case 85 : 
+                searchQuery += ' inurl:api | site:*/rest | site:*/v1 | site:*/v2 | site:*/v3'
+                break
+            default:
+                alert('Invalid option.');
+                return;
+        }
+
+        var url = 'https://www.google.com/search?q=' + encodeURIComponent(searchQuery);
+        window.open(url, '_blank');
+    }
+    </script>
+    </head>
+<body style="text-align: center; color: #ffffff; margin-top: 15px;">
     </div>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">Exclusive</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Sign Up</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Our Story Section -->
-<section class="our-story py-5">
-    <div class="container">
-        <div class="row align-items-center">
-            <!-- Text Section -->
-            <div class="col-md-6">
-                <h2 class="display-4 fw-bold">Our Story</h2>
-                <p>
-                    Launched in 2015, Exclusive is South Asia’s premier online shopping marketplace 
-                    with an active presence in Bangladesh. Supported by a wide range of tailored 
-                    marketing, data, and service solutions, Exclusive has 10,500 sellers and 300 
-                    brands, serving 3 million customers across the region.
-                </p>
-                <p>
-                    Exclusive has more than 1 million products to offer, growing very fast. Exclusive 
-                    offers a diverse assortment of categories ranging from consumer products.
-                </p>
-            </div>
-
-            <!-- Image Section -->
-            <div class="col-md-6">
-                <img src="https://images.pexels.com/photos/269077/pexels-photo-269077.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Shopping Image" class="img-fluid rounded">
-            </div>
-        </div>
-    </div>
-</section>
-
-
-    <section>
-        <div class="container mt-5">
-            <div class="row text-center">
-                <div class="col-md-3">
-                    <div class="stat-box">
-                        <div class="stat-icon">
-                            <i class="bi bi-shop"></i>
-                        </div>
-                        <div class="stat-value">10.5k</div>
-                        <div class="stat-text">Sellers active our site</div>
-                    </div>
-                </div>
-        
-                <div class="col-md-3">
-                    <div class="stat-box red">
-                        <div class="stat-icon">
-                            <i class="bi bi-cash-stack"></i>
-                        </div>
-                        <div class="stat-value">33k</div>
-                        <div class="stat-text">Monthly Product Sale</div>
-                    </div>
-                </div>
-        
-                <div class="col-md-3">
-                    <div class="stat-box">
-                        <div class="stat-icon">
-                            <i class="bi bi-gift"></i>
-                        </div>
-                        <div class="stat-value">45.5k</div>
-                        <div class="stat-text">Customer active in our site</div>
-                    </div>
-                </div>
-        
-                <div class="col-md-3">
-                    <div class="stat-box">
-                        <div class="stat-icon">
-                            <i class="bi bi-wallet"></i>
-                        </div>
-                        <div class="stat-value">25k</div>
-                        <div class="stat-text">Annual gross sale in our site</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team -->
-    <section>
-        <div class="container mt-5">
-            <div class="row">
-                <!-- Team Member 1 -->
-                <h2 class="text-center mb-4">Our Team Member</h2>
-                <div class="col-md-4 team-member">
-                    <img src="https://images.pexels.com/photos/7562180/pexels-photo-7562180.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Tom Cruise">
-                    <h3>Tom Cruise</h3>
-                    <p>Founder & Chairman</p>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com" target="_blank" class="text-primary">
-                            <i class="bi bi-facebook"></i>
-                        </a>
-                        <a href="https://www.instagram.com" target="_blank" class="text-danger">
-                            <i class="bi bi-instagram"></i>
-                        </a>
-                        <a href="https://www.linkedin.com" target="_blank" class="text-info">
-                            <i class="bi bi-linkedin"></i>
-                        </a>
-                    </div>
-                </div>
-    
-                <!-- Team Member 2 -->
-                <div class="col-md-4 team-member">
-                    <img src="https://images.pexels.com/photos/18892681/pexels-photo-18892681/free-photo-of-blonde-model-in-shadow.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Emma Watson">
-                    <h3>Emma Watson</h3>
-                    <p>Managing Director</p>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com" target="_blank" class="text-primary">
-                            <i class="bi bi-facebook"></i>
-                        </a>
-                        <a href="https://www.instagram.com" target="_blank" class="text-danger">
-                            <i class="bi bi-instagram"></i>
-                        </a>
-                        <a href="https://www.linkedin.com" target="_blank" class="text-info">
-                            <i class="bi bi-linkedin"></i>
-                        </a>
-                    </div>
-                </div>
-    
-                <!-- Team Member 3 -->
-                <div class="col-md-4 team-member">
-                    <img src="https://images.pexels.com/photos/5427535/pexels-photo-5427535.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Will Smith">
-                    <h3>Will Smith</h3>
-                    <p>Product Designer</p>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com" target="_blank" class="text-primary">
-                            <i class="bi bi-facebook"></i>
-                        </a>
-                        <a href="https://www.instagram.com" target="_blank" class="text-danger">
-                            <i class="bi bi-instagram"></i>
-                        </a>
-                        <a href="https://www.linkedin.com" target="_blank" class="text-info">
-                            <i class="bi bi-linkedin"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <h1 style="text-align: center; color: #ffffff; margin-top: 15px;">Search Engine For Web Pen-testing and Bug Hunting</h1>
+    <h5 style="color: #ffffff; margin-top: 20px;" for="target">Enter Target Domain and Click Dork Button</h5>
+    <input type="text; margin-top: 20px;" placeholder="Enter Your target Domain" id="target">
     <br>
     <br>
- <!-- Features Section -->
-<section class="features-section py-5">
-    <h2 class="text-center mb-4">Featuress</h2>
+    <button class="futuristic-button" onclick="googleSearch(1)">Directory listing vulnerabilities</button>
+    <button class="futuristic-button" onclick="googleSearch(2)">Exposed Configuration files</button>
+    <button class="futuristic-button" onclick="googleSearch(3)">Exposed Database files</button>
+    <button class="futuristic-button" onclick="googleSearch(4)">Exposed log files</button>
+    <button class="futuristic-button" onclick="googleSearch(5)">Backup and old files</button>
+    <button class="futuristic-button" onclick="googleSearch(8)">Publicly exposed documents</button>
+    <button class="futuristic-button" onclick="googleSearch(65)">Other files</button>
+    <button class="futuristic-button" onclick="googleSearch(7)">SQL errors</button>
+    <button class="futuristic-button" onclick="googleSearch(53)">Sql File</button>
+    <button class="futuristic-button" onclick="googleSearch(59)">Mysql file</button>
+    <button class="futuristic-button" onclick="googleSearch(64)">Directories containing SQL Installs and/or SQL databases</button>
+    <button class="futuristic-button" onclick="googleSearch(9)">phpinfo()</button>
+    <button class="futuristic-button" onclick="googleSearch(66)">php errors</button>
+    <button class="futuristic-button" onclick="googleSearch(6)">Login pages</button>
+    <button class="futuristic-button" onclick="googleSearch(13)">Open Redirects</button>
+    <button class="futuristic-button" onclick="googleSearch(14)">Apache STRUTS RCE</button>
+    <button class="futuristic-button" onclick="googleSearch(15)">Find Pastebin entries</button>
+    <button class="futuristic-button" onclick="googleSearch(16)">Employees on LINKEDIN</button>
     <br>
-    <div class="container">
-        <div class="row text-center">
-            <!-- Feature 1 -->
-            <div class="col-md-4 mb-4">
-                <div class="feature-icon-wrapper">
-                    <div class="feature-icon-circle">
-                        <i class="bi bi-truck feature-icon"></i>
-                    </div>
-                </div>
-                <h4>FREE AND FAST DELIVERY</h4>
-                <p>Free delivery for all orders over $140</p>
-            </div>
-            <!-- Feature 2 -->
-            <div class="col-md-4 mb-4">
-                <div class="feature-icon-wrapper">
-                    <div class="feature-icon-circle">
-                        <i class="bi bi-headset feature-icon"></i>
-                    </div>
-                </div>
-                <h4>24/7 CUSTOMER SERVICE</h4>
-                <p>Friendly 24/7 customer support</p>
-            </div>
-            <!-- Feature 3 -->
-            <div class="col-md-4 mb-4">
-                <div class="feature-icon-wrapper">
-                    <div class="feature-icon-circle">
-                        <i class="bi bi-shield-check feature-icon"></i>
-                    </div>
-                </div>
-                <h4>MONEY BACK GUARANTEE</h4>
-                <p>We return money within 30 days</p>
-            </div>
-        </div>
-    </div>
-
-</section>
+    <br>
+    <button class="futuristic-button" onclick="googleSearch(84)">Broad domain search w/ negative search</button>
+    <button class="futuristic-button" onclick="googleSearch(85)">API Endpoints</button>
+    <button class="futuristic-button" onclick="googleSearch(71)">Juicy Extensions</button>
+    <button class="futuristic-button" onclick="googleSearch(72)">High % inurl keywords</button>
+    <button class="futuristic-button" onclick="googleSearch(73)">Server Errors</button>
+    <button class="futuristic-button" onclick="googleSearch(74)">XSS prone parameters</button>
+    <button class="futuristic-button" onclick="googleSearch(75)">Open Redirect prone parameters</button>
+    <button class="futuristic-button" onclick="googleSearch(76)">SQLi Prone Parameters</button>
+    <button class="futuristic-button" onclick="googleSearch(77)">SSRF Prone Parameters</button>
+    <button class="futuristic-button" onclick="googleSearch(78)">LFI Prone Parameters</button>
+    <button class="futuristic-button" onclick="googleSearch(79)">RCE Prone Parameters</button>
+    <button class="futuristic-button" onclick="googleSearch(80)">File upload endpoints</button>
+    <button class="futuristic-button" onclick="googleSearch(44)">File Upload</button>
+    <button class="futuristic-button" onclick="googleSearch(81)">API Docs</button>
+    <button class="futuristic-button" onclick="googleSearch(82)">Test Environments</button>
+    <button class="futuristic-button" onclick="googleSearch(83)">Sensitive Parameters</button>
+    <button class="futuristic-button" onclick="googleSearch(31)">Search OpenBugBounty</button> 
+    <br>
+    <br>
+    <button class="futuristic-button" onclick="googleSearch(62)">Sensitive File #1</button>
+    <button class="futuristic-button" onclick="googleSearch(63)">Sensitive File #2</button>
+    <button class="futuristic-button" onclick="googleSearch(60)">Sensitive File #3</button>
+    <button class="futuristic-button" onclick="googleSearch(56)">Sensitive File #4</button>
+    <button class="futuristic-button" onclick="googleSearch(46)">Sensitive File #5</button>
+    <br>
+    <br>
+    <button class="futuristic-button" onclick="googleSearch(10)">Find WordPress #1</button>
+    <button class="futuristic-button" onclick="googleSearch(20)">Find WordPress #2</button>
+    <button class="futuristic-button" onclick="googleSearch(18)">Find Subdomains</button>
+    <button class="futuristic-button" onclick="googleSearch(19)">Find Sub-Subdomains</button>
+    <button class="futuristic-button" onclick="googleSearch(43)">Wordpress Juicy file #1</button>
+    <button class="futuristic-button" onclick="googleSearch(50)">Wordpress Juicy file #2</button>
+    <button class="futuristic-button" onclick="googleSearch(54)">Wordpress Juicy file #3</button>
+    <button class="futuristic-button" onclick="googleSearch(40)">wp-content Juicy Info</button>
+    <button class="futuristic-button" onclick="googleSearch(45)">Vulnerable Wordpress Plugin</button>
+    <button class="futuristic-button" onclick="googleSearch(33)">Search WP Config Backup</button>
+    <button class="futuristic-button" onclick="googleSearch(58)">Wordpress Backup</button>
+    <br>
+    <br>
+    <button class="futuristic-button" onclick="googleSearch(42)">Admin Portal</button>
+    <button class="futuristic-button" onclick="googleSearch(48)">Sensitive Admin Backup</button>
+    <button class="futuristic-button" onclick="googleSearch(11)">Finding Backdoors</button>
+    <button class="futuristic-button" onclick="googleSearch(12)">Install / Setup files</button>
+    <button class="futuristic-button" onclick="googleSearch(17)">.htaccess sensitive files</button>
+    <button class="futuristic-button" onclick="googleSearch(22)">Test CrossDomain</button>
+    <button class="futuristic-button" onclick="googleSearch(23)">Check in ThreatCrowd</button>
+    <button class="futuristic-button" onclick="googleSearch(24)">Find SWF</button>
+    <button class="futuristic-button" onclick="googleSearch(25)">Find MIME-SWF</button>
+    <button class="futuristic-button" onclick="googleSearch(26)">Find SWF links in the past</button>
+    <button class="futuristic-button" onclick="googleSearch(27)">Find MIME-SWF links in the past</button>
+    <button class="futuristic-button" onclick="googleSearch(28)">Search in Web Archive #1</button>
+    <button class="futuristic-button" onclick="googleSearch(29)">Search in Web Archive #2</button>
+    <br>
+    <br>
+    <button class="futuristic-button" onclick="googleSearch(37)">Search in SHODAN</button>
+    <button class="futuristic-button" onclick="googleSearch(34)">Search in Censys (IPv4)</button>
+    <button class="futuristic-button" onclick="googleSearch(35)">Search in Censys (Domain)</button>
+    <button class="futuristic-button" onclick="googleSearch(36)">Search in Censys (Certificates)</button>
+    <button class="futuristic-button" onclick="googleSearch(30)">Certificate Transparency</button>
+    <button class="futuristic-button" onclick="googleSearch(49)">Github API</button>
+    <button class="futuristic-button" onclick="googleSearch(21)">Search in GITHUB</button>
+    <button class="futuristic-button" onclick="googleSearch(47)">Sharing API Info</button>
+    <button class="futuristic-button" onclick="googleSearch(32)">Search in Reddit</button>
+    <br>
+    <br>
+    <button class="futuristic-button" onclick="googleSearch(38)">Vulnerable Servers</button>
+    <button class="futuristic-button" onclick="googleSearch(39)">ArcGIS REST Services Directory</button>
+    <button class="futuristic-button" onclick="googleSearch(41)">main.yml file</button>
+    <button class="futuristic-button" onclick="googleSearch(51)">Drupal Login</button>
+    <button class="futuristic-button" onclick="googleSearch(52)">Joomla Database/</button>
+    <button class="futuristic-button" onclick="googleSearch(55)">Remote procedure call protocol</button>
+    <button class="futuristic-button" onclick="googleSearch(57)">jwks-rsa file</button>
+    <button class="futuristic-button" onclick="googleSearch(61)">Docker-Compose yml file</button>
+    <br>
 <br>
-<br>
- <!-- Footer Section -->
-<footer class="footer bg-dark text-light py-5">
-    <div class="container">
-        <div class="row">
-            <!-- Subscribe Section -->
-            <div class="col-md-3 mb-4">
-                <h5>Exclusive</h5>
-                <p>Subscribe</p>
-                <p>Get 10% off your first order</p>
-                <form action="#" class="footer-form">
-                    <div class="input-group">
-                        <input type="email" class="form-control" placeholder="Enter your email" aria-label="Email">
-                        <button class="btn btn-outline-light" type="submit">
-                            <i class="bi bi-arrow-right"></i>
-                        </button>
-                    </div>
-                </form>
-            </div>
-            
-            <!-- Support Section -->
-            <div class="col-md-3 mb-4">
-                <h5>Support</h5>
-                <p>111 Bijoy Sarani, Dhaka, DH 1515, Bangladesh</p>
-                <p>exclusive@gmail.com</p>
-                <p>+88015-88888-9999</p>
-            </div>
-
-            <!-- Account Section -->
-            <div class="col-md-2 mb-4">
-                <h5>Account</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="text-light">My Account</a></li>
-                    <li><a href="#" class="text-light">Login / Register</a></li>
-                    <li><a href="#" class="text-light">Cart</a></li>
-                    <li><a href="#" class="text-light">Wishlist</a></li>
-                    <li><a href="#" class="text-light">Shop</a></li>
-                </ul>
-            </div>
-
-            <!-- Quick Links Section -->
-            <div class="col-md-2 mb-4">
-                <h5>Quick Link</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="text-light">Privacy Policy</a></li>
-                    <li><a href="#" class="text-light">Terms of Use</a></li>
-                    <li><a href="#" class="text-light">FAQ</a></li>
-                    <li><a href="#" class="text-light">Contact</a></li>
-                </ul>
-            </div>
-
-            <!-- Download App Section -->
-            <div class="col-md-2 mb-4">
-                <h5>Download App</h5>
-                <p>Save $3 with App New User Only</p>
-                <a href="#" class="img-fluid mb-2t">QR Code</a>
-                <div class="app-buttons">
-                    <a href="#" class="text-light">Google Play</a>
-                    <a href="#" class="text-light">App Store</a>
-                </div>
-                <div class="social-icons mt-2">
-                    <a href="#"><i class="bi bi-facebook text-light me-3"></i></a>
-                    <a href="#"><i class="bi bi-twitter text-light me-3"></i></a>
-                    <a href="#"><i class="bi bi-instagram text-light me-3"></i></a>
-                    <a href="#"><i class="bi bi-linkedin text-light"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Copyright Section -->
-    <hr style="color: rgb(115, 107, 107);">
-    <div class="text-center py-3">
-        <p>&copy; Copyright Rimel 2022. All rights reserved</p>
-    </div>
-</footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<h4 style="text-align: center; color: #ffffff; margin-top: 15px;">Follow us on social media</h4>
+<div class="container text-center">
+    <a href="https://www.youtube.com/@0xPoyel" target="_blank" class="me-3">
+      <i class="fab fa-youtube fa-2x"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/zabed-ullah-poyel/" target="_blank" class="me-3">
+      <i class="fab fa-linkedin fa-2x"></i>
+    </a>
+    <a href="https://github.com/0xPoyel" target="_blank" class="me-3">
+      <i class="fab fa-github fa-2x"></i>
+    </a>
+    <a href="https://medium.com/@zabedullahpoyel" target="_blank" class="me-3">
+      <i class="fab fa-medium fa-2x"></i>
+    </a>
+    <a href="https://x.com/zabedullahpoyel" target="_blank" class="me-3">
+        <i class="fab fa-twitter fa-2x"></i>
+      </a>
+  </div>  
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+<hr style="color: white;">
 </html>
