@@ -1,10 +1,12 @@
 # Search Engine For Web Pen-testing and Bug Hunting
 ### Google dorks helper Website
+<h4>Description: A simple tool that provides an updated list of Google dorks for finding vulnerable endpoints, exposed databases, and sensitive information indexed by search engines.</h4>
+
 ```
 https://0xpoyel.github.io/Search-Engine-For-Web-Pen-testing-and-Bug-Hunting/
 ```
-Description: A simple tool that provides an updated list of Google dorks for finding vulnerable endpoints, exposed databases, and sensitive information indexed by search engines.
 ---
+
 ## Connect with me
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/zabed-ullah-poyel/)
@@ -14,7 +16,7 @@ Description: A simple tool that provides an updated list of Google dorks for fin
 [![Website](https://img.shields.io/badge/Website-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://zabedullahpoyel.com)
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:zabedullahpoyelcontact@gmail.com)
 
-
+---
 
 ### Directory listing vulnerabilities
 
