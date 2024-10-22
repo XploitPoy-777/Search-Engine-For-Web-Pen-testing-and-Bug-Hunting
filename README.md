@@ -1,7 +1,5 @@
 # Search Engine For Web Pen-testing and Bug Hunting
 ### Google dorks helper Website
-<h4>Description: A simple tool that provides an updated list of Google dorks for finding vulnerable endpoints, exposed databases, and sensitive information indexed by search engines.</h4>
-🔗
 
 ```
 https://0xpoyel.github.io/Search-Engine-For-Web-Pen-testing-and-Bug-Hunting/
