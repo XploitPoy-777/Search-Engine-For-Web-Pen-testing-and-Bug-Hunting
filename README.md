@@ -1,5 +1,5 @@
 # Search Engine For Web Pen-testing and Bug Hunting
-### Google dorks helper Website
+### 🔗 Google dorks helper Website
 
 ```
 https://0xpoyel.github.io/Search-Engine-For-Web-Pen-testing-and-Bug-Hunting/
