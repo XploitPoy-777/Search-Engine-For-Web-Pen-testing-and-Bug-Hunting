@@ -2,7 +2,7 @@
 ### 🔗 Google dorks helper Website
 
 ```
-https://0xpoyel.github.io/Search-Engine-For-Web-Pen-testing-and-Bug-Hunting/
+https://XploitPoy-777.github.io/Search-Engine-For-Web-Pen-testing-and-Bug-Hunting/
 ```
 
 ![Alt text](./Web-Screenshot.png)
